@@ -1,54 +1,63 @@
+html, body {
+    height: 100%;
+}
+ 
 body {
-  background-color: #000000;
-  background-position: center;
-  background-attachment: fixed;
-  background-image: url("/img/rainbow.gif");
+    background-color: #000000;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("/img/rainbow.gif");
 }
-
-img {
-  vertical-align: middle;
+ 
+.center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.center{
-  text-align: center;
-  font-size: 50px;
-  padding: 17%;
-}
-
+ 
 .rainbow {
-  -webkit-animation: rainbow 0.2s infinite;
-  -ms-animation: rainbow 0.2s infinite;
-  animation: rainbow 0.2s infinite;
+    font-size: 100px;
+    -webkit-animation: rainbow 0.2s infinite;
+    -ms-animation: rainbow 0.2s infinite;
+    animation: rainbow 0.2s infinite;
 }
-
+ 
+@media (max-width: 600px) {
+    .rainbow {
+        font-size: 50px;
+    }
+}
+ 
 @-webkit-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-  20%{color: red;}
-  30%{color: CadetBlue;}
-  40%{color: yellow;}
-  50%{color: coral;}
-  60%{color: green;}
-  70%{color: cyan;}
-  80%{color: DeepPink;}
-  90%{color: DodgerBlue;}
-  100%{color: orange;}
+    0%{color: orange;} 
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
 }
-
+ 
 @-ms-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-  20%{color: red;}
-  40%{color: yellow;}
-  60%{color: green;}
-  100%{color: orange;}
+    0%{color: orange;} 
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: orange;}
 }
-
+ 
 @keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-  20%{color: red;}
-  40%{color: yellow;}
-  60%{color: green;}
-  100%{color: orange;}
+    0%{color: orange;} 
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: orange;}
 }
